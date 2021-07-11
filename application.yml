@@ -1,0 +1,3 @@
+db:
+  hostname:configserverlocalhost
+  port: 1433
