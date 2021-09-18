@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://db:3306/carinfodbdev
+    url: jdbc:mysql://db:3306/carinfodbuat
     driverClassName: com.mysql.jdbc.Driver
     username: root
     password: P@ssw0rd
