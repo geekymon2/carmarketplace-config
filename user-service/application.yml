@@ -7,4 +7,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
   instance:
-    prefer-ip-address: true  
+    prefer-ip-address: true
+
+api-config:
+  jwt-config:
+    jwt-disabled: true
+    jwt-secret: ${JWT_AUTH_SECRET}
+    jwt-validity: 20
