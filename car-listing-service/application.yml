@@ -38,6 +38,6 @@ db:
 
 api-config:
   jwt-config:
-    jwt-disabled: true
+    jwt-disabled: false
     jwt-secret: ${JWT_AUTH_SECRET}
     jwt-validity: 20
