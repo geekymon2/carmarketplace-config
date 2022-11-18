@@ -20,8 +20,9 @@ spring:
       data-locations: classpath:data-mysql.sql
       mode: always
 
-
 server:
+  servlet:
+    context-path: /api/car-info-service
   port: 8082
 
 eureka:
@@ -36,8 +37,7 @@ db:
   host: localhost
   port: 1111
 
-api-config:
-  jwt-config:
-    jwt-disabled: false
-    jwt-secret: ${JWT_AUTH_SECRET}
-    jwt-validity: 20
+jwt-config:
+  jwt-disabled: false
+  jwt-secret: ${JWT_AUTH_SECRET}
+  jwt-validity: 20
