@@ -36,8 +36,3 @@ eureka:
 db:
   host: localhost
   port: 1111
-
-jwt-config:
-  jwt-disabled: false
-  jwt-secret: ${JWT_AUTH_SECRET}
-  jwt-validity: 20
