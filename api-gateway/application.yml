@@ -16,16 +16,16 @@ spring:
           uri: http://localhost:8081/
           predicates:
             - Path=/api/car-listing-service/**
-  eureka:
-    client:
-      enabled: true
-      serviceUrl:
-        defaultZone: http://localhost:8761/eureka
-    instance:
-      prefer-ip-address: true
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
 
-  springdoc:
-    webjars:
-      prefix: /api
-    cache:
-      disabled: true
+springdoc:
+  webjars:
+    prefix: /api
+  cache:
+    disabled: true
