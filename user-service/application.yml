@@ -20,9 +20,10 @@ spring:
       data-locations: classpath:data-mysql.sql
       mode: always
 
-
 server:
   port: 8084
+  servlet:
+    context-path: /api/user-service  
 
 eureka:
   client:
@@ -32,8 +33,7 @@ eureka:
   instance:
     prefer-ip-address: true
 
-api-config:
-  jwt-config:
-    jwt-disabled: true
-    jwt-secret: ${JWT_AUTH_SECRET}
-    jwt-validity: 20
+jwt-config:
+  jwt-disabled: true
+  jwt-secret: testing
+  jwt-validity: 20
