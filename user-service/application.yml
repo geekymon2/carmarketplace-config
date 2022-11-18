@@ -37,3 +37,5 @@ jwt-config:
   jwt-disabled: false
   jwt-secret: ${JWT_AUTH_SECRET}
   jwt-validity: 20
+
+management.endpoints.web.exposure.include: refresh
