@@ -35,5 +35,5 @@ eureka:
 
 jwt-config:
   jwt-disabled: true
-  jwt-secret: testing
+  jwt-secret: ${JWT_AUTH_SECRET}
   jwt-validity: 20
