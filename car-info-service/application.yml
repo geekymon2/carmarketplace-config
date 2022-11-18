@@ -21,9 +21,9 @@ spring:
       mode: always
 
 server:
+  port: 8082
   servlet:
     context-path: /api/car-info-service
-  port: 8082
 
 eureka:
   client:
