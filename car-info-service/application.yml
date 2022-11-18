@@ -36,6 +36,6 @@ eureka:
 jwt-config:
   jwt-disabled: false
   jwt-secret: ${JWT_AUTH_SECRET}
-  jwt-validity: 20
+  jwt-validity: 30
 
 management.endpoints.web.exposure.include: refresh
