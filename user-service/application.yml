@@ -5,7 +5,7 @@ spring:
     username: root
     password: 'P@ssw0rd'
   jpa:
-    database-platform: org.hibernate.dialect.MySQL55Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     defer-datasource-initialization: true
     show-sql: true
     generate-ddl: true
