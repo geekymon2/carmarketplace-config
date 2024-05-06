@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://geekymon2-desktop:3306/carinfodbdev
+    url: jdbc:mysql://mysql-db:3306/carinfodbdev
     driverClassName: com.mysql.jdbc.Driver
     username: mon2
     password: ${DB_PASSWORD} 
