@@ -3,7 +3,7 @@ logging:
     root: DEBUG
 spring:
   datasource:
-    url: jdbc:mysql://mysql-db:3306/carinfodbci
+    url: jdbc:mysql://db:3306/carinfodbci
     driverClassName: com.mysql.jdbc.Driver
     username: mon2
     password: ${DB_PASSWORD} 
