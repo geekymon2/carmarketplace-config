@@ -18,7 +18,7 @@ spring:
     init:
       platform: mysql
       data-locations: classpath:data-mysql.sql
-      mode: always
+      mode: never
 
 server:
   port: 8082
