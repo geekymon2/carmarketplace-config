@@ -30,6 +30,6 @@ eureka:
 
 springdoc:
   webjars:
-    prefix: /api
+    prefix: /
   cache:
     disabled: true
