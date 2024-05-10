@@ -30,6 +30,7 @@ eureka:
 
 springdoc:
   swagger-ui:
+    disable-swagger-default-url: true
     configUrl: /api/v3/api-docs/swagger-config
   webjars:
     prefix: /api
