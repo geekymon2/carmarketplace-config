@@ -1,5 +1,6 @@
 server:
   port: 8008
+  forward-headers-strategy: framework
 spring:
   cloud:
     gateway:
