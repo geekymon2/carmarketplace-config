@@ -30,7 +30,7 @@ eureka:
 
 springdoc:
   swagger-ui:
-    configUrl: /v3/api-docs/swagger-config
+    configUrl: /api/v3/api-docs/swagger-config
   webjars:
     prefix: /api
   cache:
