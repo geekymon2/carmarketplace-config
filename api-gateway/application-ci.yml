@@ -11,15 +11,15 @@ spring:
         - id: user-service
           uri: http://user-service:8084/
           predicates:
-            - Path=/user-service/**
+            - Path=/api/user-service/**
         - id: car-info-service
           uri: http://car-info-service:8082/
           predicates:
-            - Path=/car-info-service/**
+            - Path=/api/car-info-service/**
         - id: car-listing-service
           uri: http://car-listing-service:8081/
           predicates:
-            - Path=/car-listing-service/**
+            - Path=/api/car-listing-service/**
 eureka:
   client:
     enabled: true
