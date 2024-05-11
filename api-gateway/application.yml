@@ -1,10 +1,5 @@
-logging:
-  level:
-    root: DEBUG
 server:
   port: 8008
-  forward-headers-strategy: framework
-  use-forward-headers: true
 spring:
   cloud:
     gateway:
@@ -30,8 +25,6 @@ eureka:
     prefer-ip-address: true
 
 springdoc:
-  swagger-ui:
-    path: '/swagger-ui.html'
   webjars:
     prefix: /api
   cache:
