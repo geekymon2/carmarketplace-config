@@ -30,6 +30,8 @@ eureka:
     prefer-ip-address: true
 
 springdoc:
+  swagger-ui:
+    path: '/swagger-ui.html'
   webjars:
     prefix: /api
   cache:
