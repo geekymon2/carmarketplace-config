@@ -1,5 +1,10 @@
+logging:
+  level:
+    root: DEBUG
 server:
   port: 8008
+  forward-headers-strategy: framework
+  use-forward-headers: true
 spring:
   cloud:
     gateway:
