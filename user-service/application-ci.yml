@@ -33,9 +33,17 @@ eureka:
   instance:
     prefer-ip-address: true
 
-jwt-config:
-  jwt-disabled: false
-  jwt-secret: ${JWT_AUTH_SECRET}
-  jwt-validity: 30
+app-config:
+  cors-config:
+    allowed-origins: "http://minikube:30000"
+    max-age: 3600
+    allow-credentials: true
+    allowed-header: "*"
+    allowed-method: "*"
+    exposed-header: ""
+  jwt-config:
+    jwt-disabled: false
+    jwt-secret: ${JWT_AUTH_SECRET}
+    jwt-validity: 30
 
 management.endpoints.web.exposure.include: refresh
