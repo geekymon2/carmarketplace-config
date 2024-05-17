@@ -44,6 +44,6 @@ app-config:
   jwt-config:
     jwt-disabled: false
     jwt-secret: ${JWT_AUTH_SECRET}
-    jwt-validity: 35
+    jwt-validity: 30
 
 management.endpoints.web.exposure.include: refresh
