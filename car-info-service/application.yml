@@ -34,16 +34,16 @@ eureka:
     prefer-ip-address: true
 
 app-config:
-  jwt-config:
-    jwt-disabled: false
-    jwt-secret: ${JWT_AUTH_SECRET}
-    jwt-validity: 30
   cors-config:
-    allowed-origins: http://localhost:4200,
+    allowed-origins: "http://localhost:4200,"
     max-age: 3600
     allow-credentials: true
     allowed-header: "*"
     allowed-method: "*"
     exposed-header: ""
+  jwt-config:
+    jwt-disabled: false
+    jwt-secret: ${JWT_AUTH_SECRET}
+    jwt-validity: 30
 
 management.endpoints.web.exposure.include: refresh
