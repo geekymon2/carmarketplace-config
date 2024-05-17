@@ -38,4 +38,12 @@ jwt-config:
   jwt-secret: ${JWT_AUTH_SECRET}
   jwt-validity: 30
 
+cors-config:
+  allowed-origins: http://localhost:4200,
+  max-age: 3600
+  allow-credentials: true
+  allowed-header: "*"
+  allowed-method: "*"
+  exposed-header: ""
+
 management.endpoints.web.exposure.include: refresh
