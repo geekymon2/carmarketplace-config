@@ -42,7 +42,7 @@ app-config:
     allowed-method: "*"
     exposed-header: ""
   jwt-config:
-    jwt-disabled: false
+    jwt-disabled: true
     jwt-secret: ${JWT_AUTH_SECRET}
     jwt-validity: 30
 
