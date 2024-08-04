@@ -8,14 +8,6 @@ spring:
           uri: http://localhost:8084/
           predicates:
             - Path=/api/user-service/**
-          metadata:
-            cors:
-              allowedOrigins: '*'
-              allowedMethods:
-                - GET
-                - POST
-              allowedHeaders: '*'
-              maxAge: 30
         - id: car-info-service
           uri: http://localhost:8082/
           predicates:
