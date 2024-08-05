@@ -10,12 +10,14 @@ spring:
             - Path=/api/user-service/**
           metadata:
             cors:
-              allowedOrigins: 'http://localhost:4200'
+              allowedOrigins:
+                - "http://localhost:4200"
+                - "http://localhost:8008"
               allowedMethods:
                 - GET
                 - POST
                 - PUT
-              allowedHeaders: '*'
+              allowedHeaders: "*"
               maxAge: 30
         - id: car-info-service
           uri: http://localhost:8082/
@@ -23,12 +25,14 @@ spring:
             - Path=/api/car-info-service/**
           metadata:
             cors:
-              allowedOrigins: 'http://localhost:4200'
+              allowedOrigins:
+                - "http://localhost:4200"
+                - "http://localhost:8008"
               allowedMethods:
                 - GET
                 - POST
                 - PUT
-              allowedHeaders: '*'
+              allowedHeaders: "*"
               maxAge: 30
         - id: car-listing-service
           uri: http://localhost:8081/
@@ -36,12 +40,14 @@ spring:
             - Path=/api/car-listing-service/**
           metadata:
             cors:
-              allowedOrigins: 'http://localhost:4200'
+              allowedOrigins:
+                - "http://localhost:4200"
+                - "http://localhost:8008"
               allowedMethods:
                 - GET
                 - POST
                 - PUT
-              allowedHeaders: '*'
+              allowedHeaders: "*"
               maxAge: 30
 eureka:
   client:
