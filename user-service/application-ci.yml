@@ -13,7 +13,7 @@ spring:
       ddl-auto: validate
     properties:
       hibernate:
-        '[format_sql]': true
+        "[format_sql]": true
   sql:
     init:
       platform: mysql
@@ -23,7 +23,7 @@ spring:
 server:
   port: 8084
   servlet:
-    context-path: /api/user-service  
+    context-path: /api/user-service
 
 eureka:
   client:
@@ -35,6 +35,7 @@ eureka:
 
 app-config:
   cors-config:
+    enabled: true
     allowed-origins: "http://minikube:30000"
     max-age: 3600
     allow-credentials: true
