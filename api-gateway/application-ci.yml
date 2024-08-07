@@ -8,14 +8,47 @@ spring:
           uri: http://user-service:8084/
           predicates:
             - Path=/api/user-service/**
+          metadata:
+            cors:
+              allowedOrigins:
+                - "http://minikube:30420"
+                - "http://minikube:30000"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+              allowedHeaders: "*"
+              maxAge: 30
         - id: car-info-service
           uri: http://car-info-service:8082/
           predicates:
             - Path=/api/car-info-service/**
+          metadata:
+            cors:
+              allowedOrigins:
+                - "http://minikube:30420"
+                - "http://minikube:30000"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+              allowedHeaders: "*"
+              maxAge: 30
         - id: car-listing-service
           uri: http://car-listing-service:8081/
           predicates:
             - Path=/api/car-listing-service/**
+          metadata:
+            cors:
+              allowedOrigins:
+                - "http://minikube:30420"
+                - "http://minikube:30000"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+              allowedHeaders: "*"
+              maxAge: 30
 eureka:
   client:
     enabled: true
