@@ -35,7 +35,7 @@ eureka:
 
 app-config:
   cors-config:
-    enabled: true
+    enabled: false
     allowed-origins: "http://minikube:30420"
     max-age: 3600
     allow-credentials: true
