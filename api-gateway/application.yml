@@ -27,7 +27,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://localhost:4200"
-                - "http://localhost:8008"
               allowedMethods: "*"
               allowedHeaders: "*"
               maxAge: 30
