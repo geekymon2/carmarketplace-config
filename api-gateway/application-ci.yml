@@ -12,7 +12,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://minikube:30420"
-                - "http://minikube:30000"
               allowedMethods:
                 - GET
                 - POST
@@ -27,7 +26,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://minikube:30420"
-                - "http://minikube:30000"
               allowedMethods:
                 - GET
                 - POST
@@ -42,7 +40,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://minikube:30420"
-                - "http://minikube:30000"
               allowedMethods:
                 - GET
                 - POST

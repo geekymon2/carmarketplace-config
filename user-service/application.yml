@@ -35,13 +35,7 @@ eureka:
 
 app-config:
   cors-config:
-    enabled: true
-    allowed-origins: "http://localhost:8008"
-    max-age: 3600
-    allow-credentials: true
-    allowed-header: "*"
-    allowed-method: "*"
-    exposed-header: ""
+    enabled: false
   jwt-config:
     jwt-disabled: true
     jwt-secret: ${JWT_AUTH_SECRET}

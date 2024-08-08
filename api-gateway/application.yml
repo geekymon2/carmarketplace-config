@@ -12,7 +12,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://localhost:4200"
-                - "http://localhost:8008"
               allowedMethods:
                 - GET
                 - POST
@@ -27,7 +26,10 @@ spring:
             cors:
               allowedOrigins:
                 - "http://localhost:4200"
-              allowedMethods: "*"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
               allowedHeaders: "*"
               maxAge: 30
         - id: car-listing-service
@@ -38,7 +40,6 @@ spring:
             cors:
               allowedOrigins:
                 - "http://localhost:4200"
-                - "http://localhost:8008"
               allowedMethods:
                 - GET
                 - POST
