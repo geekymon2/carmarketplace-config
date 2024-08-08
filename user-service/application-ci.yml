@@ -36,12 +36,6 @@ eureka:
 app-config:
   cors-config:
     enabled: false
-    allowed-origins: "http://minikube:30420"
-    max-age: 3600
-    allow-credentials: true
-    allowed-header: "*"
-    allowed-method: "*"
-    exposed-header: ""
   jwt-config:
     jwt-disabled: false
     jwt-secret: ${JWT_AUTH_SECRET}
