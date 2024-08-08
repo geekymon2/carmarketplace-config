@@ -35,7 +35,7 @@ eureka:
 
 app-config:
   cors-config:
-    enabled: true
+    enabled: false
     allowed-origins: "http://localhost:8008"
     max-age: 3600
     allow-credentials: true
