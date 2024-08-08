@@ -26,11 +26,9 @@ spring:
           metadata:
             cors:
               allowedOrigins:
+                - "http://localhost:4200"
                 - "http://localhost:8008"
-              allowedMethods:
-                - GET
-                - POST
-                - PUT
+              allowedMethods: "*"
               allowedHeaders: "*"
               maxAge: 30
         - id: car-listing-service
