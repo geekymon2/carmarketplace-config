@@ -26,7 +26,6 @@ spring:
           metadata:
             cors:
               allowedOrigins:
-                - "http://localhost:4200"
                 - "http://localhost:8008"
               allowedMethods:
                 - GET
