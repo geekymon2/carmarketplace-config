@@ -45,5 +45,6 @@ app-config:
       - "/api-docs"
       - "/eureka"
       - "/actuator/refresh"
+      - "/status"      
 
 management.endpoints.web.exposure.include: refresh

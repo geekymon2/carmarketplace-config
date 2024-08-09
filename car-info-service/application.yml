@@ -48,5 +48,6 @@ app-config:
       - "/car/makes"
       - "/car/types"
       - "/car/models"
+      - "/status"      
 
 management.endpoints.web.exposure.include: refresh
