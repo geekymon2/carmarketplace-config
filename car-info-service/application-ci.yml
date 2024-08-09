@@ -40,5 +40,7 @@ app-config:
     jwt-disabled: false
     jwt-secret: ${JWT_AUTH_SECRET}
     jwt-validity: 30
+  router-config:
+    open-endpoints: "/api-docs", "/eureka", "/actuator/refresh", "/car/makes", "/car/types", "/car/models"
 
 management.endpoints.web.exposure.include: refresh
