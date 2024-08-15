@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/${USER_DB_NAME}
     driverClassName: com.mysql.jdbc.Driver
-    username: mon2
+    username: ${USER_DB_USER}
     password: ${USER_DB_PASSWORD}
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
