@@ -1,0 +1,28 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /api/notification-service
+
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+app-config:
+  cors-config:
+    enabled: false
+  jwt-config:
+    jwt-disabled: false
+    jwt-secret: ${JWT_AUTH_SECRET}
+    jwt-validity: 30
+  router-config:
+    open-endpoints:
+      - "/api-docs"
+      - "/eureka"
+      - "/actuator/refresh"
+      - "/status"
+
+management.endpoints.web.exposure.include: refresh
